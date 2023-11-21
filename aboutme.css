@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    border-radius:8px;
+    border: solid rgb(42, 117, 117);
+    background:radial-gradient(aqua,rgb(89, 173, 173),lightblue);
+    width: 130px;
+    height: 50px;    
+    box-shadow: 2px 5px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li:hover{
+    background:radial-gradient(rgb(146, 62, 62),rgb(170, 120, 120),rgb(211, 141, 144));
+    
+}
+
+.logoo{
+ font-family:Garamond;
+ font-size: 40px;
+}
+
+.link{
+    display: flex;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.quotes{
+    text-align: center;
+    align-items: center;
+    color:darkred;
+    word-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    word-spacing: 4px;
+    font-size: 1.2em;
+}
+body{
+    background:url(../gambar/papasir.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width:500px) {
+    li{
+        width: 40%;
+        height: 40%;
+        font-size: 38%;
+        
+    }
+    .logoo{
+        font-size: 80%;
+        text-align: center;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:960px) {
+    li{
+        width: 55%;
+        height: 55%;
+        font-size: 50%;
+        
+    }
+    .logoo{
+        font-size: 90%;
+        text-align: center;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
